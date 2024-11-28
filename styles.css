@@ -1,0 +1,189 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+  }
+
+  .media{
+    background-image: url(bg.png);
+    height: 100vh;
+    width: 100%;
+  }
+  
+  nav {
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    position: sticky; 
+    width: 100%;
+    z-index: 100; 
+  }
+  
+  .logo-title {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    font-family: 'Cormorant Garamond';
+    font-weight: 700;
+  }
+  
+  nav .logo {
+    width: 50px; 
+    height: auto; 
+    transition: transform 0.3s ease; 
+  }
+  
+  nav .logo:hover {
+    transform: scale(1.1); 
+  }
+  
+  .site-title {
+    color: black; 
+    font-size: 2rem; 
+    margin: 0; 
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    flex-grow: 1; 
+  }
+  
+  .navbar li {
+    display: flex;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: black; 
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+    border-radius: 5px; 
+  }
+  
+  .navbar a:hover {
+    color: #fff; 
+    
+  }
+  
+  .search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px; 
+    height: 30px;
+    margin-right: 50px;
+  }
+  
+  .search-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+  }
+
+  .content{
+    text-align: left;
+    margin-right: 20rem;
+    margin-left: 9rem;
+    margin-top: 70px;
+  }
+  .content h1{
+    font-size: 6rem;
+    font-family: 'Oswald';
+    font-weight: 700;
+    line-height: 0.89;
+  }
+
+  .content p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .content button{
+    border-color: black;
+    border: solid thin;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+    background-color: transparent;
+    height: 2rem;
+    width: 6rem;
+    margin-top: 20px;
+    font-family: 'Roboto';
+}
+
+  .content button:hover{
+    color: white;
+  }
+
+  footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%; 
+    background-color: transparent; 
+    color: black; 
+    text-align: right;
+    padding: 20px;
+   
+}
+
+  @media only screen and (max-width: 600px){
+    .media{
+      background-image: url(Untitled\ design\ \(1\).png);
+      
+      
+    }
+    body{
+      color: white;
+    }
+    
+    nav .logo{
+      display: none;
+    }
+
+    .content{
+      margin-top: 30px;
+    }
+
+    .content h1{
+      font-size: 4rem;
+      display: flex;
+    }
+
+    .navbar a{
+      font-size: 12px;
+      color: white;
+    }
+
+    .navbar a:hover{
+      color: brown;
+    }
+
+    .search-icon{
+      display: none;
+    }
+
+
+    .content button{
+      color: white;
+    }
+
+    .content button:hover{
+      color: brown;
+    }
+
+    footer{
+      color: white;
+    }
+
+  }
